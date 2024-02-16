@@ -9,6 +9,12 @@ export default {
       fontFamily: {
         poppins : ["Poppins", 'sans-serif']
       },
+      backgroundImage: {
+        banner: "url('/src/assets/images/BG Image.png')",
+      },
+      colors: {
+        primary: '#1D293F',
+      },
     },
   },
   plugins: [],

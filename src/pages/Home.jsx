@@ -1,12 +1,12 @@
 import React from 'react'
-import Container from '../components/Container'
+import Banner from '../components/layouts/Banner'
 
 function Home() {
   return (
     <section>
-      <Container>
-        <h1>hkjasflkha</h1>
-      </Container>
+      
+        <Banner/>
+       
     </section>
   )
 }
