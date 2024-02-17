@@ -8,32 +8,18 @@ import Backpack from "../../assets/icons/Backpack.png";
 import City from "../../assets/icons/City.png";
 import Jungle from "../../assets/icons/Jungle.png";
 import CardCategory from "../CardCategory";
+
+// for react slick 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import NextArrow from "../../assets/icons/NextArrow";
+import PrevArrow from "../../assets/icons/PrevArrow";
 
-// custom Arrows
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
+
+
+
 
 function Category() {
   // for slider
@@ -43,8 +29,43 @@ function Category() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    initialSlide: 0,
+    autoplay: true,
+    centerMode: true,
+    centerPadding: '100px',
+    autoplaySpeed: 2500,
+    nextArrow: <NextArrow  />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1324,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
