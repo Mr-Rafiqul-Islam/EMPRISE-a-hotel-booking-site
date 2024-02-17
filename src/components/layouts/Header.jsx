@@ -6,7 +6,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import Button from "../Button";
 function Header() {
   return (
-    <header className="py-[35px] w-full bg-transparent fixed top-0 left-0">
+    <header className="py-[35px] w-full bg-transparent absolute top-0 left-0">
       <Container className="flex justify-between">
         <div className="">
           <Link><img src={Logo} alt="Logo" /></Link>
