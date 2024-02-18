@@ -14,6 +14,7 @@ export default {
       },
       colors: {
         primary: '#1D293F',
+        para: '#546179',
       },
     },
   },
