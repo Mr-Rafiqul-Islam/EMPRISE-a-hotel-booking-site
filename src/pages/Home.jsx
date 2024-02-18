@@ -3,6 +3,7 @@ import Banner from '../components/layouts/Banner'
 import Header from '../components/layouts/Header'
 import Category from '../components/layouts/Category'
 import Trending from '../components/layouts/Trending'
+import Destinations from '../components/layouts/Destinations'
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
         <Banner/>
         <Category/>
         <Trending/>
-       
+        <Destinations/>
     </section>
   )
 }
