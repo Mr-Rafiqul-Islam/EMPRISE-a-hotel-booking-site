@@ -6,14 +6,20 @@ import CardHover from "../CardHover";
 import b1 from "../../assets/images/b1.png";
 import b2 from "../../assets/images/b2.png";
 import b3 from "../../assets/images/b3.png";
+import Button from "../Button";
 
 function BestSeller() {
   return (
     <section className="py-[70px]">
       <Container>
-        <div className="mb-[60px]">
-          <Heading text="Best Seller" className="mb-5" />
-          <Paragraph text="Sost Brilliant reasons Entrada should be your one-stop-shop!" />
+        <div className="mb-[60px] flex justify-between">
+          <div>
+            <Heading text="Best Seller" className="mb-5" />
+            <Paragraph text="Sost Brilliant reasons Entrada should be your one-stop-shop!" />
+          </div>
+          <div className="grid place-content-center">
+            <Button className='text-white bg-[#E81A46] font-poppins font-normal rounded-full px-[40px] py-[20px] text-[24px]' text='Check All'/> 
+          </div>
         </div>
         <div className="flex gap-10">
           <CardHover
