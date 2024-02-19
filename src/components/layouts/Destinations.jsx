@@ -26,8 +26,8 @@ function Destinations() {
     <section className='py-[70px]'>
         <Container>
         <div className="mb-[60px]">
-          <Heading text="Top Destinations" className="mb-5" />
-          <Paragraph text="Sost Brilliant reasons Entrada should be your one-stop-shop!" />
+          <Heading text="Top Destinations" className="mb-5"/>
+          <Paragraph text="Sost Brilliant reasons Entrada should be your one-stop-shop!"/>
         </div>
         <Slider {...settings}>
             <Gallery/>

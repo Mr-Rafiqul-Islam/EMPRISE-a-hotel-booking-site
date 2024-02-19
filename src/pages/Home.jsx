@@ -4,6 +4,7 @@ import Header from '../components/layouts/Header'
 import Category from '../components/layouts/Category'
 import Trending from '../components/layouts/Trending'
 import Destinations from '../components/layouts/Destinations'
+import BestSeller from '../components/layouts/BestSeller'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <Category/>
         <Trending/>
         <Destinations/>
+        <BestSeller/>
     </section>
   )
 }
