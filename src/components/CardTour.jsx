@@ -3,6 +3,7 @@ import Image from "./Image";
 import Subheading from "./Subheading";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
+import { Link } from "react-router-dom";
 
 function CardTour({img,serial,title}) {
   return (
@@ -37,6 +38,11 @@ function CardTour({img,serial,title}) {
                   className="w-[380px]"
                 />
               </div>
+            </div>
+            <div className="flex gap-10 mt-[130px]">
+              <Link ><Subheading text='Facebook' className='text-[18px] text-black'/></Link>
+              <Link ><Subheading text='Instagram' className='text-[18px] text-black'/></Link>
+              <Link ><Subheading text='Twitter' className='text-[18px] text-black'/></Link>
             </div>
           </div>
         </div>

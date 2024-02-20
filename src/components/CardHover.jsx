@@ -34,7 +34,7 @@ function CardHover({img,discount,duration,price,title,des}) {
               </span>
               <Button
                 text="Explore"
-                className=" text-white bg-[#E81A46] font-poppins font-normal text-[18px] py-2 px-5"
+                className=" text-white bg-third font-poppins font-normal text-[18px] py-2 px-5"
               />
             </div>
           </div>
