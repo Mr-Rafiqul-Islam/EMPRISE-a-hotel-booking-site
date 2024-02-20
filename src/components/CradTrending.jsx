@@ -32,12 +32,10 @@ function CradTrending({ cardimg, discount, title, des, price }) {
           <div>
             <Paragraph text="from" className="text-sm mb-[10px]" />
             {/* Price */}
-            <span className="before:w-[130px] before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:-bottom-6 before:-z-1 relative">
               <Subheading
                 text={price}
-                className="font-semibold text-[32px] mb-3"
+                className="font-semibold text-[32px] mb-3 relative before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-0 before:-z-10"
               />
-            </span>
             <Paragraph
               className="text-[#99A3AD] text-sm"
               text="*Price Varies"

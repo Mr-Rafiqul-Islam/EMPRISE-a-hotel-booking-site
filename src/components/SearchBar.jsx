@@ -9,7 +9,7 @@ function SearchBar({className}) {
   return (
     <div className={`w-[1328px] h-[176px] px-[71px] bg-white rounded-2xl flex items-center ${className}`}>
         <div className="">
-            <span className='before:w-[120px] before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:-bottom-6 before:-z-1 relative'><Subheading text='Location' className='text-black text-[28px] font-poppins font-semibold '/></span>
+            <Subheading text='Location' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-0 before:z-[0] relative z-10'/>
             <form className="flex items-center gap-10">
               <select name="Location"  className="underline py-2 bg-white font-poppins font-normal text-[18px] text-[#99A3AD]  " id="Location">
                 <option selected >Enter your destination</option>
@@ -20,9 +20,9 @@ function SearchBar({className}) {
             </form>
         </div>
         <div className="border-x-2 ps-14">
-            <span className='before:w-[110px] before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:-bottom-6 before:-z-1 relative'><Subheading text='Activity' className='text-black text-[28px] font-poppins font-semibold '/></span>
+            <Subheading text='Activity' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-0 before: relative'/>
             <form className="flex items-center gap-10">
-              <select name="Location"  className="underline py-2 bg-white font-poppins font-normal text-[18px] text-[#99A3AD]  " id="Location">
+              <select name="Activity"  className="underline py-2 bg-white font-poppins font-normal text-[18px] text-[#99A3AD]" id="Location">
                 <option selected >Bungee Jump</option>
                 <option value='sky diving' >Sky diving</option>
                 <option value='horse riding' >Horse riding</option>
@@ -31,7 +31,10 @@ function SearchBar({className}) {
             </form>
         </div>
         <div className="ps-14 me-10">
-            <span className='before:w-[70px] before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:-bottom-6 before:-z-1 relative'><Subheading text='Date' className='text-black text-[28px] font-poppins font-semibold '/></span>
+            <h2 className='text-black inline-block text-[28px] font-poppins font-semibold relative z-10 before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-1 before:left-0 before:z-[1]'>
+              Date
+              <span className=''></span>
+            </h2>
             <form className="flex items-center">
               <input type="datetime" placeholder='See date' className='underline py-2 bg-white font-poppins font-normal text-[18px] text-[#99A3AD] w-64 outline-none' name="" id="" />
               <Date className='text-3xl text-black/70'/>
