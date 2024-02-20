@@ -6,6 +6,7 @@ import Trending from '../components/layouts/Trending'
 import Destinations from '../components/layouts/Destinations'
 import BestSeller from '../components/layouts/BestSeller'
 import Tourguides from '../components/layouts/Tourguides'
+import Promotion from '../components/layouts/Promotion'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <Destinations/>
         <BestSeller/>
         <Tourguides/>
+        <Promotion/>
     </section>
   )
 }

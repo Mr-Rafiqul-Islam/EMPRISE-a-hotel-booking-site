@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         banner: "url('/src/assets/images/BG Image.png')",
+        promotionBanner: "url('/src/assets/images/CTA.png')",
       },
       colors: {
         primary: '#1D293F',
