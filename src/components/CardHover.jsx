@@ -32,10 +32,8 @@ function CardHover({img,discount,duration,price,title,des}) {
               <span className="w-10 h-10 rounded-full grid place-content-center bg-white cursor-pointer">
                 <IoMdShare />
               </span>
-              <Button
-                text="Explore"
-                className=" text-white bg-third font-poppins font-normal text-[18px] py-2 px-5"
-              />
+              <button className="text-white bg-third font-poppins font-normal text-[18px] py-2 px-6 rounded-full">Explore</button>
+              
             </div>
           </div>
         </div>

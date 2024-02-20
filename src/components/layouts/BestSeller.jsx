@@ -18,7 +18,7 @@ function BestSeller() {
             <Paragraph text="Sost Brilliant reasons Entrada should be your one-stop-shop!" />
           </div>
           <div className="grid place-content-center">
-            <Button className='text-white bg-third font-poppins font-normal rounded-full px-[40px] py-[20px] text-[24px]' text='Check All'/> 
+            <button className='text-white bg-third font-poppins font-normal rounded-full px-[40px] py-[20px] text-[24px]'>Check All</button>
           </div>
         </div>
         <div className="flex gap-10">

@@ -7,6 +7,7 @@ import Destinations from '../components/layouts/Destinations'
 import BestSeller from '../components/layouts/BestSeller'
 import Tourguides from '../components/layouts/Tourguides'
 import Promotion from '../components/layouts/Promotion'
+import Newsletter from '../components/layouts/Newsletter'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <BestSeller/>
         <Tourguides/>
         <Promotion/>
+        <Newsletter/>
     </section>
   )
 }
