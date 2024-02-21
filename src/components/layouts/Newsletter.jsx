@@ -15,6 +15,7 @@ function Newsletter() {
   return (
     <section className="py-[70px]">
       <Container className="flex relative gap-10">
+        {/* image section */}
         <div className="grid grid-cols-2 gap-10">
           <Image src={nl1} />
           <div className="grid grid-rows-2 gap-10">
@@ -23,7 +24,7 @@ function Newsletter() {
           </div>
         </div>
         <Image className="absolute -top-4 -left-12 -z-10" src={Dots} />
-
+        {/* text sction */}
         <div className="all_content">
           <div className="pb-[63px] pt-[38px]">
             <Subheading

@@ -8,6 +8,8 @@ import BestSeller from '../components/layouts/BestSeller'
 import Tourguides from '../components/layouts/Tourguides'
 import Promotion from '../components/layouts/Promotion'
 import Newsletter from '../components/layouts/Newsletter'
+import Contact from '../components/layouts/Contact'
+import Footer from '../components/layouts/Footer'
 
 function Home() {
   return (
@@ -21,6 +23,8 @@ function Home() {
         <Tourguides/>
         <Promotion/>
         <Newsletter/>
+        <Contact/>
+        <Footer/>
     </section>
   )
 }
