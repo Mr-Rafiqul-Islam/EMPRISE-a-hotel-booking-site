@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import CardIcon from "../../assets/icons/CardIcon";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import SearchBar from "../SearchBar";
+import SocialLink from "../SocialLink";
 const Banner = () => {
   return (
-    <section className="pt-[256px] pb-[198px] bg-banner bg-cover bg-no-repeat bg-center">
+    <section className="pt-[256px] pb-[198px] bg-banner bg-cover bg-no-repeat bg-center relative">
+      <SocialLink classname='text-white absolute bottom-[50%] -right-[120px] -rotate-90'/>
       <Container>
         <div className="ps-[138px] pe-[78px]">
           {/* banner text */}
