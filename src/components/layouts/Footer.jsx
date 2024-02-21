@@ -11,6 +11,9 @@ import { CgArrowLongRight } from "react-icons/cg";
 import ServiceList from "../ServiceList";
 import AdventureList from "../AdventureList";
 import CountryList from "../CountryList";
+import { FiMail } from "react-icons/fi";
+import SocialLink from "../SocialLink";
+import payment from '../../assets/images/Payment Logos.png'
 
 function Footer() {
   return (
@@ -61,14 +64,55 @@ function Footer() {
           </div>
         </div>
         <hr className="my-10" />
-        {/*  */}
+        {/* footer navigation part  */}
         <div className="grid grid-cols-2">
+          {/* 1st half */}
           <div className="grid grid-cols-3">
             <ServiceList />
             <AdventureList />
-            <CountryList className='ms-8'/>
+            <CountryList className="ms-8" />
           </div>
-          <div></div>
+          {/* 2nd half */}
+          <div className="ms-auto">
+            <div>
+              <Subheading text="Get In Touch" className="text-black mb-6" />
+              <div className="flex gap-6 items-center">
+                <Heading
+                  text="Lets Talk"
+                  className=" font-medium leading-[60px]"
+                />
+                <CgArrowLongRight className="text-4xl" />
+              </div>
+              {/* input field */}
+              <div className="flex">
+                <div className="bg-white flex p-6 shadow-xl items-center">
+                  <FiMail className="text-[#99A3AD] me-4 text-xl" />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Enter Your Email"
+                    className="outline-none font-poppins font-normal placeholder:font-poppins placeholder:text-[18px] placeholder:text-[#99A3AD]"
+                  />
+                </div>
+                <button
+                  className="bg-third text-white font-poppins text-2xl px-4 py-2 shadow-xl"
+                  type="#"
+                >
+                  Send Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* lower part */}
+        <div className="flex justify-between items-center mt-[130px]">
+          <Subheading text='Privacy Policy'/>
+          <SocialLink classname='text-black'/>
+        </div>
+        <hr className="my-5"/>
+        <div className="flex justify-between">
+          <Paragraph text='2016-2021 © Emprise' className='text-base'/>
+          <div><Image src={payment}/></div>
         </div>
       </Container>
     </footer>
