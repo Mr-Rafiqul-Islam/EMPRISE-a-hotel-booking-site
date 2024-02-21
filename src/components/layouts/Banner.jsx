@@ -5,9 +5,9 @@ import CardIcon from "../../assets/icons/CardIcon";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import SearchBar from "../SearchBar";
 import SocialLink from "../SocialLink";
-const Banner = () => {
+const Banner = ({className}) => {
   return (
-    <section className="pt-[256px] pb-[198px] bg-banner bg-cover bg-no-repeat bg-center relative">
+    <section className={`pt-[256px] pb-[198px] bg-banner bg-cover bg-no-repeat bg-center relative ${className}`}>
       <SocialLink classname='text-white absolute bottom-[50%] -right-[120px] -rotate-90'/>
       <Container>
         <div className="ps-[138px] pe-[78px]">
@@ -25,8 +25,8 @@ const Banner = () => {
                 <span className="me-4"> -02&#176; C</span>Very Cold
               </p>
               <div className="flex gap-3">
-                <BsArrowLeftCircle className="text-white text-4xl" />
-                <BsArrowRightCircle className="text-white text-4xl" />
+                <BsArrowLeftCircle className="text-white text-4xl cursor-pointer my-button-prev" />
+                <BsArrowRightCircle className="text-white text-4xl cursor-pointer my-button-next" />
               </div>
             </div>
             <div className="flex">

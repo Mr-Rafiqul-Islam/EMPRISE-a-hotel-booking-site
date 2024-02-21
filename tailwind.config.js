@@ -11,6 +11,8 @@ export default {
       },
       backgroundImage: {
         banner: "url('/src/assets/images/BG Image.png')",
+        banner2: "url('/src/assets/images/BG Image2.png')",
+        banner3: "url('/src/assets/images/BG Image3.png')",
         promotionBanner: "url('/src/assets/images/CTA.png')",
       },
       colors: {

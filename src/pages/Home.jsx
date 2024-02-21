@@ -11,11 +11,39 @@ import Newsletter from '../components/layouts/Newsletter'
 import Contact from '../components/layouts/Contact'
 import Footer from '../components/layouts/Footer'
 
+// For Swiper core and required modules
+import { Navigation, } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function Home() {
+  
+
   return (
     <section>
         <Header/>
-        <Banner/>
+        <Swiper
+      // install Swiper modules
+      modules={[Navigation]}
+      spaceBetween={50}
+      slidesPerView={1}
+      loop={true}
+      speed={1000}
+      navigation={{
+        nextEl: '.my-button-next',
+        prevEl: '.my-button-prev',
+      }}
+    >
+      <SwiperSlide><Banner/></SwiperSlide>
+      <SwiperSlide><Banner className='bg-banner2'/></SwiperSlide>
+      <SwiperSlide><Banner className='bg-banner3'/></SwiperSlide>
+    </Swiper>
         <Category/>
         <Trending/>
         <Destinations/>
