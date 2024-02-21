@@ -6,8 +6,11 @@ import Paragraph from "../Paragraph";
 import Subheading from "../Subheading";
 import Heading from "../Heading";
 import Image from "../Image";
-import earth from '../../assets/icons/officeIcon.png'
+import earth from "../../assets/icons/officeIcon.png";
 import { CgArrowLongRight } from "react-icons/cg";
+import ServiceList from "../ServiceList";
+import AdventureList from "../AdventureList";
+import CountryList from "../CountryList";
 
 function Footer() {
   return (
@@ -42,21 +45,34 @@ function Footer() {
             />
           </div>
           <div className="flex">
-            <div><Image src={earth} className='block'/></div>
+            <div>
+              <Image src={earth} className="block" />
+            </div>
             <div className="ms-5">
-                <Subheading text='Our Offices' className='text-black'/>
-                <Subheading text='Nepal, USA, India' className='font-medium text-black my-4'/>
-                <Link><CgArrowLongRight className="text-4xl"/></Link>
+              <Subheading text="Our Offices" className="text-black" />
+              <Subheading
+                text="Nepal, USA, India"
+                className="font-medium text-black my-4"
+              />
+              <Link>
+                <CgArrowLongRight className="text-4xl" />
+              </Link>
             </div>
           </div>
         </div>
         <hr className="my-10" />
         {/*  */}
+        <div className="grid grid-cols-2">
+          <div className="grid grid-cols-3">
+            <ServiceList />
+            <AdventureList />
+            <CountryList className='ms-8'/>
+          </div>
+          <div></div>
+        </div>
       </Container>
     </footer>
   );
 }
 
 export default Footer;
-
-
