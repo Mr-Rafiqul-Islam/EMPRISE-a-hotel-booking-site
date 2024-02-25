@@ -12,9 +12,9 @@ function SearchBar({className}) {
             <Subheading text='Location' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-1 before:z-[-1] relative z-10'/>
             <form className="flex items-center gap-10">
               <select name="Location"  className="underline py-2 bg-white font-poppins font-normal text-[18px] text-[#99A3AD]  " id="Location">
-                <option selected >Enter your destination</option>
-                <option value='london' >London</option>
-                <option value='greece' >Greece</option>
+                <option selected className='bg-white'>Enter your destination</option>
+                <option value='london' className='bg-white'>London</option>
+                <option value='greece' className='bg-white'>Greece</option>
               </select>
               <CiLocationOn className='text-3xl text-black me-10'/>
             </form>

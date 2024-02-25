@@ -9,14 +9,13 @@ import Tourguides from "../components/layouts/Tourguides";
 import Promotion from "../components/layouts/Promotion";
 import Newsletter from "../components/layouts/Newsletter";
 import Contact from "../components/layouts/Contact";
-import Footer from "../components/layouts/Footer";
 
 // For Swiper core and required modules
 import { Navigation } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+// for Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -56,7 +55,6 @@ function Home() {
       <Promotion />
       <Newsletter />
       <Contact />
-      <Footer />
     </section>
   );
 }
