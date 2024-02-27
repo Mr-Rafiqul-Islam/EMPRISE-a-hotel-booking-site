@@ -20,8 +20,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Selector from "../components/Selector";
-import Container from "../components/Container";
 
 function Home() {
   return (
@@ -56,9 +54,6 @@ function Home() {
       <Tourguides />
       <Promotion />
       <Newsletter />
-      <Container>
-      <Selector/>
-      </Container>
       <Contact />
     </section>
   );

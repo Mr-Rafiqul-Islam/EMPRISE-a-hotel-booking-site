@@ -25,7 +25,7 @@ function Selector() {
   }, []);
 
   return (
-    <div className="w-72 bg-white h-80 font-poppins font-normal text-[18px] text-[#99A3AD]">
+    <div className="w-72 bg-white  font-poppins font-normal text-[18px] text-[#99A3AD]">
       <div
         onClick={() => setOpen(!open)}
         className="flex justify-between items-center w-full rounded underline"
@@ -38,7 +38,7 @@ function Selector() {
         <CiLocationOn size={25} className="text-black" />
       </div>
       <ul
-        className={`mt-2 bg-white overflow-y-auto ${
+        className={`mt-2 bg-white overflow-y-auto shadow-xl rounded-xl absolute w-72 ${
           open ? "max-h-60" : "max-h-0"
         }`}
       >
