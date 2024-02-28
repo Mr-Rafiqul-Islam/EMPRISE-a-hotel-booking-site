@@ -3,7 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 
-function Selector() {
+function Selector({className}) {
   // for api data
   const [countries, setCountries] = useState([]);
   //   for dropdown
@@ -25,7 +25,7 @@ function Selector() {
   }, []);
 
   return (
-    <div className="w-72 bg-white  font-poppins font-normal text-[18px] text-[#99A3AD]">
+    <div className={`w-72 bg-white  font-poppins font-normal text-[18px] text-[#99A3AD] ${className}`}>
       <div
         onClick={() => setOpen(!open)}
         className="flex justify-between items-center w-full rounded underline"

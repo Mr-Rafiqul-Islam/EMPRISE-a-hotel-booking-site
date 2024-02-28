@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import Demo from "./pages/Demo";
 import RootLayout from "./components/layouts/RootLayout";
 
 const router = createBrowserRouter(
@@ -12,6 +13,8 @@ const router = createBrowserRouter(
     <Route>
       <Route path='/' element={<RootLayout/>}>
         <Route path="/" element={<Home/>}/>
+        <Route path="/demo" element={<Demo/>}/>
+        <Route path="*" element='khuija pai na'/>
       </Route>
     </Route>
 ));
