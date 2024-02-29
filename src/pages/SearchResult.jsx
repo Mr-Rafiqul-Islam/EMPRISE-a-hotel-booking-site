@@ -9,6 +9,11 @@ function SearchResult() {
     <Header2/>
     <Container>
         <SearchCount/>
+        <div className="flex">
+            <aside>
+                
+            </aside>
+        </div>
     </Container>
     </>
   )
