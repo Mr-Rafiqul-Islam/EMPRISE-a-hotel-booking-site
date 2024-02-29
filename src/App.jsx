@@ -7,6 +7,7 @@ import {
 import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import RootLayout from "./components/layouts/RootLayout";
+import SearchResult from "./pages/SearchResult";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<RootLayout/>}>
         <Route path="/" element={<Home/>}/>
         <Route path="/demo" element={<Demo/>}/>
+        <Route path="/search-result" element={<SearchResult/>}/>
         <Route path="*" element='khuija pai na'/>
       </Route>
     </Route>

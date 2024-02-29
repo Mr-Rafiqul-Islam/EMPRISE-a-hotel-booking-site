@@ -23,7 +23,7 @@ import "swiper/css/scrollbar";
 
 function Home() {
   return (
-    <section>
+    <>
       <Header />
       <Swiper
         // install Swiper modules
@@ -55,7 +55,7 @@ function Home() {
       <Promotion />
       <Newsletter />
       <Contact />
-    </section>
+    </>
   );
 }
 
