@@ -11,7 +11,7 @@ import Timer from '../../assets/icons/Timer.svg'
 
 function TopFilter({className}) {
   return (
-    <div className={`w-full bg-whiten grid grid-cols-6 gap-8 ${className}`}>
+    <div className={`w-full bg-whiten grid grid-cols-6 gap-8 mb-10 ${className}`}>
         <div className="flex justify-between items-center border rounded-2xl py-[22px] px-[10px]">
             <Image src={deal}/>
             <Paragraph text="Discounted Deals" className='text-base text-black'/>

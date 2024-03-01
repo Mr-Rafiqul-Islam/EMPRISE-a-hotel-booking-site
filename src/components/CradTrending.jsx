@@ -14,7 +14,7 @@ function CradTrending({ cardimg, discount, title, des, price }) {
         {/* card_image */}
         <Image className="block" src={cardimg} />
         {/* batch */}
-        <div className="w-14 h-8 bg-[#FEF2DE] text-[#F5A623] rounded-lg shadow absolute top-10 right-8 flex justify-center items-center">
+        <div className={`w-14 h-8 bg-[#FEF2DE] text-[#F5A623] rounded-lg shadow absolute top-10 right-8 flex justify-center items-center ${discount ? "block" : "hidden"}`}>
           {discount}
         </div>
       </div>

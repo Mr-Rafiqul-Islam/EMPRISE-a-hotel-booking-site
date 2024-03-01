@@ -9,7 +9,7 @@ function Header2({className}) {
     <header className={`py-[35px] w-full bg-transparent ${className}`}>
       <Container className="flex justify-between">
         <div className="">
-          <Link><img src={Logo} alt="Logo" /></Link>
+          <Link to='/'><img src={Logo} alt="Logo" /></Link>
         </div>
         <nav className="w-[1328px] flex justify-between">
           <ul className="flex items-center">
