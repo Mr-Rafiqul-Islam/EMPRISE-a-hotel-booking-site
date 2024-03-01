@@ -9,7 +9,7 @@ function CheckboxFilter({ className, title, data }) {
       <Label text={title} className=""/>
       {myArray.map((i) => (
         <div className="">
-          <Checkbox label={<Typography className="font-poppins text-base text-[#212529]">{i.checklist}</Typography>} color="red" className="ms-[-10px]"/>
+          <Checkbox label={<Typography className="font-poppins text-base text-[#212529]">{i}</Typography>} color="red" className="ms-[-10px]"/>
         </div>
       ))}
     </div>

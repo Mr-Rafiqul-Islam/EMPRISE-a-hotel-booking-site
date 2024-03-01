@@ -15,13 +15,13 @@ import Label from "../components/Label";
 import CheckboxFilter from "../components/CheckboxFilter";
 
 function SearchResult() {
-
-    let adata =[
-        { checklist: "Facebook login", forclick: "facebook" },
-        { checklist: "Twitter login", forclick: "twitter" },
-        { checklist: "Instagram login", forclick: "instagram" },
-        { checklist: "Linkedin login", forclick: "linkedin" },
-      ];
+  let adata = [
+    "Child Friendly",
+    "Taking extra precautions",
+    "Away from the chaos",
+    "Epic Challenges",
+    "Virtual Experiences",
+  ];
   return (
     <>
       <Header2 />
@@ -41,11 +41,10 @@ function SearchResult() {
                   className="outline-none w-full placeholder:font-poppins placeholder:text-base placeholder:text-[#99A3AD] text-base text-[#99A3AD] font-poppins"
                   id=""
                 />
-                <img src={date} alt="date"/>
+                <img src={date} alt="date" />
               </div>
 
-              <CheckboxFilter title='Popular tags' data={adata} />
-              
+              <CheckboxFilter title="Popular tags" data={adata} />
             </div>
           </aside>
           {/* card sides */}
