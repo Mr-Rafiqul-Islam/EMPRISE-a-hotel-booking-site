@@ -19,8 +19,10 @@ import r5 from "../assets/icons/Stars(4).png";
 import Label from "../components/Label";
 import Image from "../components/Image";
 import CheckboxFilter from "../components/CheckboxFilter";
+import BestSeller from "../components/layouts/BestSeller";
 
 function SearchResult() {
+  // for checkbox
   let fdata = [
     "Child Friendly",
     "Taking extra precautions",
@@ -33,28 +35,22 @@ function SearchResult() {
     "1 to 4 Hours",
     "4 Hours to 1 Day",
     "1 to 3 Days",
-    "3 Days or More"
+    "3 Days or More",
   ];
-  let Agedata = [
-    "1 & Up",
-    "3 & Up",
-    "7 & Up",
-    "13 & Up",
-    "18 & Up"
-  ];
+  let Agedata = ["1 & Up", "3 & Up", "7 & Up", "13 & Up", "18 & Up"];
   let Specialdata = [
     "Discounted deals",
     "Free Cancellations",
     "Private Groups",
     "New on Entrada",
-    "Entrada Specials"
+    "Entrada Specials",
   ];
   let icon = [
-    <Image src={r1}/>,
-    <Image src={r2}/>,
-    <Image src={r3}/>,
-    <Image src={r4}/>,
-    <Image src={r5}/>,
+    <Image src={r1} />,
+    <Image src={r2} />,
+    <Image src={r3} />,
+    <Image src={r4} />,
+    <Image src={r5} />,
   ];
 
   return (
@@ -82,13 +78,13 @@ function SearchResult() {
               <CheckboxFilter title="Popular tags" data={fdata} />
 
               <div>
-                <Label text='Price Range'/>
+                <Label text="Price Range" />
                 <input type="range" name="" id="" />
               </div>
-              <CheckboxFilter title={"Duartion"} data={Durdata}/>
-              <CheckboxFilter title={"Tour Rating"} data={icon}/>
-              <CheckboxFilter title={"Age Group"} data={Agedata}/>
-              <CheckboxFilter title={"Specials"} data={Specialdata}/>
+              <CheckboxFilter title={"Duartion"} data={Durdata} />
+              <CheckboxFilter title={"Tour Rating"} data={icon} />
+              <CheckboxFilter title={"Age Group"} data={Agedata} />
+              <CheckboxFilter title={"Specials"} data={Specialdata} />
             </div>
           </aside>
           {/* card sides */}
@@ -158,6 +154,7 @@ function SearchResult() {
             />
           </div>
         </div>
+        <BestSeller/>
       </Container>
     </>
   );
