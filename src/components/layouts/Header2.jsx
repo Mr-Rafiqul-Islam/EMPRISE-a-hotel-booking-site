@@ -36,7 +36,7 @@ function Header2({className}) {
           </ul>
           <div className="btns">
             <Link className="font-poppins font-normal text-xl text-primary me-4">Login</Link>
-            <Link className="font-poppins font-normal text-xl"><Button className='bg-[#E81A46] text-white' text='Sign Up'/></Link>
+            <Link className="font-poppins font-normal text-xl"><Button className='text-white bg-[#E81A46]' text='Sign Up'/></Link>
           </div>
         </nav>
       </Container>

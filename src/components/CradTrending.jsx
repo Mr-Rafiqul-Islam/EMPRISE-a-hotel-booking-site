@@ -9,7 +9,7 @@ import { MdDone } from "react-icons/md";
 
 function CradTrending({ cardimg, discount, title, des, price }) {
   return (
-    <div className="border rounded-xl shadow-xl">
+    <div className="border rounded-xl shadow-xl hover:scale-105 duration-500">
       <div className="p-4 relative">
         {/* card_image */}
         <Image className="block" src={cardimg} />

@@ -5,7 +5,7 @@ import { Checkbox, Typography } from "@material-tailwind/react";
 function CheckboxFilter({ className, title, data }) {
   let myArray = data
   return (
-    <div className={`my-5 ${className}`}>
+    <div className={`my-8 ${className}`}>
       <Label text={title} className=""/>
       {myArray.map((i) => (
         <div className="">

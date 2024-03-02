@@ -66,7 +66,7 @@ function Selector({className}) {
               }
             }}
             key={country.name.common}
-            className={`p-2 hover:bg-sky-600 hover:text-white cursor-pointer 
+            className={`p-2 hover:bg-blue-600 hover:text-white cursor-pointer 
 
             // for matching color
             ${country.name.common.toLowerCase() === selected.toLowerCase() &&

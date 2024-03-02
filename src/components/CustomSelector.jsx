@@ -32,7 +32,7 @@ function CustomSelector({ className }) {
       >
         {activities.map((i) => (
           <li
-            className={`p-2 hover:bg-sky-600 hover:text-white cursor-pointer`}
+            className={`p-2 hover:bg-blue-500 hover:text-white cursor-pointer`}
             key={i}
             onClick={() => {
               setSelected(i);
