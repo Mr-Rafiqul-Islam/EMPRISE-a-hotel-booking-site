@@ -154,7 +154,7 @@ function SearchResult() {
             />
           </div>
         </div>
-        <BestSeller/>
+        <BestSeller title='Recently Viewed'/>
       </Container>
     </>
   );

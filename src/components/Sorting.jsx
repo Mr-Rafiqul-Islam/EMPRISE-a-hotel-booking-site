@@ -25,7 +25,7 @@ function Sorting() {
               setOpen(false);
               setSelected(item);
             }}
-            className="p-1 hover:bg-sky-600 hover:text-white duration-700 cursor-pointer"
+            className="p-1 hover:bg-blue-600 hover:text-white duration-700 cursor-pointer"
             key={item}
           >
             {item}

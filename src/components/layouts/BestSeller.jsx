@@ -8,13 +8,13 @@ import b2 from "../../assets/images/b2.png";
 import b3 from "../../assets/images/b3.png";
 import Button from "../Button";
 
-function BestSeller() {
+function BestSeller({title}) {
   return (
     <section className="py-[70px]">
       <Container>
         <div className="mb-[60px] flex justify-between">
           <div>
-            <Heading text="Best Seller" className="mb-5" />
+            <Heading text={title} className="mb-5" />
             <Paragraph text="Sost Brilliant reasons Entrada should be your one-stop-shop!" />
           </div>
           <div className="grid place-content-center">

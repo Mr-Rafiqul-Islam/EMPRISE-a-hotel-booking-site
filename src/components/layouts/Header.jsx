@@ -9,7 +9,7 @@ function Header({className}) {
     <header className={`py-[35px] w-full bg-transparent absolute top-0 left-0 z-10 ${className}`}>
       <Container className="flex justify-between">
         <div className="">
-          <Link><img src={Logo} alt="Logo" /></Link>
+          <Link to='/'><img src={Logo} alt="Logo" /></Link>
         </div>
         <nav className="w-[1328px] flex justify-between">
           <ul className="flex items-center">
@@ -28,7 +28,7 @@ function Header({className}) {
                 Specials
               </li>
             </Link>
-            <Link>
+            <Link to='/search-result'>
               <li className="text-xl font-poppins font-medium text-white mx-5">
               <IoSearchSharp className="text-2xl"/>
               </li>

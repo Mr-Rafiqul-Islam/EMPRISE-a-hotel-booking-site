@@ -50,7 +50,7 @@ function Home() {
       <Category />
       <Trending />
       <Destinations />
-      <BestSeller />
+      <BestSeller title="Best Seller"/>
       <Tourguides />
       <Promotion />
       <Newsletter />
