@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import RootLayout from "./components/layouts/RootLayout";
 import SearchResult from "./pages/SearchResult";
+import TourDetail from "./pages/TourDetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<Home/>}/>
         <Route path="/demo" element={<Demo/>}/>
         <Route path="/search-result" element={<SearchResult/>}/>
+        <Route path="/tour-detail" element={<TourDetail/>}/>
         <Route path="*" element='khuija pai na'/>
       </Route>
     </Route>
