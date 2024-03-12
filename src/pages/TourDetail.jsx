@@ -10,6 +10,8 @@ import a2 from "../assets/images/thumb2.png";
 import a3 from "../assets/images/thumb3.png";
 import a4 from "../assets/images/thumb4.png";
 import Image from "../components/Image";
+import TourDescription from "../components/layouts/TourDescription";
+import TourBooking from "../components/layouts/TourBooking";
 
 function TourDetail() {
   return (
@@ -25,7 +27,11 @@ function TourDetail() {
           </div>
           <Flex className="flex-col">
             <GallerySlider />
-            <Breadcrumb className='mt-10' />
+            <Breadcrumb className='mt-10 ps-0' />
+            <Flex className='justify-between'>
+            <TourDescription/>
+            <TourBooking/>
+            </Flex>
           </Flex>
         </Flex>
         <BestSeller title="Similar Tours" />
