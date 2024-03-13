@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import Image from "../Image";
 import Subheading from "../Subheading";
 import watch from "../../assets/icons/watch.svg";
+import { AccordionCustomIcon } from "../Accordion";
 
 function TabsOverview() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -152,7 +153,7 @@ function TabsOverview() {
             <div className="flex gap-16">
                 <Image src={iternary} className={`self-start`} />
                 <div>
-                  
+                  <AccordionCustomIcon/>
                 </div>
             </div>
             </TabPanel>
