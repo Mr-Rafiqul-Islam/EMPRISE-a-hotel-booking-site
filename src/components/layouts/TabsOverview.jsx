@@ -17,11 +17,11 @@ import Paragraph from "../Paragraph";
 import { Link } from "react-router-dom";
 import Image from "../Image";
 import Subheading from "../Subheading";
-import watch from "../../assets/icons/watch.svg";
 import { AccordionCustomIcon } from "../Accordion";
 
 function TabsOverview() {
   const [activeTab, setActiveTab] = useState("overview");
+  // tabs data
   const data = [
     {
       label: "Overview",
@@ -62,6 +62,7 @@ function TabsOverview() {
           constantly trying to express ourselves and actualize our dreams.`,
     },
   ];
+  // overview info
   const info = [
     {
       title: "Duration",
@@ -125,7 +126,7 @@ function TabsOverview() {
               <div className="flex gap-16">
                 <Image src={Description} className={`self-start`} />
                 <div>
-                  <Paragraph className="text-[#1D293F] mb-5" text={data.at(0).desc} />
+                  <Paragraph className="text-[#1D293F] mb-5 text-base" text={data.at(0).desc} />
                   <Link className="text-[#99A3AD] font-poppins text-base">
                     Show More...
                   </Link>
