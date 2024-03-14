@@ -204,7 +204,12 @@ function TabsOverview() {
           <TabPanel key="essential" value="essential">
           <div className="flex gap-16">
               <Image src={iternary} className={`self-start`} />
-              <div></div>
+              <div>
+              <Paragraph
+                  className="text-[#1D293F] mb-5 text-base"
+                  text={data.at(0).desc}
+                />
+              </div>
             </div>
           </TabPanel>
         </TabsBody>

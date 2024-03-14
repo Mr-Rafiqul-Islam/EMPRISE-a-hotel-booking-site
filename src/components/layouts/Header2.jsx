@@ -28,7 +28,7 @@ function Header2({className}) {
                 Specials
               </li>
             </Link>
-            <Link>
+            <Link to='/search-result'>
               <li className="text-xl font-poppins font-medium text-primary mx-5">
               <IoSearchSharp className="text-2xl"/>
               </li>
