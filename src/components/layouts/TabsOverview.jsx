@@ -17,7 +17,8 @@ import Paragraph from "../Paragraph";
 import { Link } from "react-router-dom";
 import Image from "../Image";
 import Subheading from "../Subheading";
-import { AccordionCustomIcon } from "../Accordion";
+import { AccordionCustomIcon } from "../AccordionCustomIcon";
+import InclusionsList from "./InclusionsList";
 
 function TabsOverview() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -121,67 +122,85 @@ function TabsOverview() {
           ))}
         </TabsHeader>
         <TabsBody>
-          
-            <TabPanel key="overview" value="overview">
-              <div className="flex gap-16">
-                <Image src={Description} className={`self-start`} />
-                <div>
-                  <Paragraph className="text-[#1D293F] mb-5 text-base" text={data.at(0).desc} />
-                  <Link className="text-[#99A3AD] font-poppins text-base">
-                    Show More...
-                  </Link>
-                  <div className="flex flex-wrap gap-y-7 mt-14">
-                    {info.map(({ title, logo, besideLogo }) => (
-                      <div key={title} className="basis-1/3">
+          <TabPanel key="overview" value="overview">
+            <div className="flex gap-16">
+              <Image src={Description} className={`self-start`} />
+              <div>
+                <Paragraph
+                  className="text-[#1D293F] mb-5 text-base"
+                  text={data.at(0).desc}
+                />
+                <Link className="text-[#99A3AD] font-poppins text-base">
+                  Show More...
+                </Link>
+                <div className="flex flex-wrap gap-y-7 mt-14">
+                  {info.map(({ title, logo, besideLogo }) => (
+                    <div key={title} className="basis-1/3">
+                      <Subheading
+                        text={title}
+                        className="text-base text-[#546179]"
+                      />
+                      <div className="flex items-center gap-2 mt-7">
+                        <Image src={logo} />
                         <Subheading
-                          text={title}
-                          className="text-base text-[#546179]"
+                          text={besideLogo}
+                          className="text-[#1D293F] font-medium"
                         />
-                        <div className="flex items-center gap-2 mt-7">
-                          <Image src={logo} />
-                          <Subheading
-                            text={besideLogo}
-                            className="text-[#1D293F] font-medium"
-                          />
-                        </div>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </TabPanel>
-            <TabPanel key='iternary' value="iternary">
-            <div className="flex gap-16">
-                <Image src={iternary} className={`self-start`} />
-                <div>
-                  <AccordionCustomIcon/>
-                </div>
             </div>
-            </TabPanel>
-            <TabPanel key='inclusions' value="inclusions">
-            <Image src={inclusions} className={`self-start`} />
-                <div>
-                  
-                </div>
-            </TabPanel>
-            <TabPanel key='reviews' value="reviews">
-            <Image src={review} className={`self-start`} />
-                <div>
-                  
-                </div>
-            </TabPanel>
-            <TabPanel key='faq' value="faq">
-            <Image src={faq} className={`self-start`} />
-                <div>
-                  
-                </div>
-            </TabPanel>
-            <TabPanel key='essential' value="essential">
-            <Image src={iternary} className={`self-start`} />
-                <div>
-                  
-                </div>
-            </TabPanel>
+          </TabPanel>
+          <TabPanel key="iternary" value="iternary">
+            <div className="flex gap-16">
+              <Image src={iternary} className={`self-start`} />
+              <div>
+                <AccordionCustomIcon />
+                <Link>
+                  <Paragraph
+                    text="Show 12 more itinerary days"
+                    className={`py-4 border-b-2 text-base `}
+                  />
+                </Link>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel key="inclusions" value="inclusions">
+            <div className="flex gap-16">
+              <Image src={inclusions} className={`self-start`} />
+              <div>
+                <Paragraph
+                  className="text-[#1D293F] mb-5 text-base"
+                  text={data.at(0).desc}
+                />
+                <Link className="text-[#99A3AD] font-poppins text-base">
+                  Show More...
+                </Link>
+                {/* list of inclusions */}
+                <InclusionsList/>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel key="reviews" value="reviews">
+            <div className="flex gap-16">
+              <Image src={review} className={`self-start`} />
+              <div></div>
+            </div>
+          </TabPanel>
+          <TabPanel key="faq" value="faq">
+          <div className="flex gap-16">
+              <Image src={faq} className={`self-start`} />
+              <div></div>
+            </div>
+          </TabPanel>
+          <TabPanel key="essential" value="essential">
+          <div className="flex gap-16">
+              <Image src={iternary} className={`self-start`} />
+              <div></div>
+            </div>
+          </TabPanel>
         </TabsBody>
       </Tabs>
     </div>
