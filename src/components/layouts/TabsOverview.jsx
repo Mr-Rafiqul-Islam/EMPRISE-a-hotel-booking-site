@@ -19,6 +19,8 @@ import Image from "../Image";
 import Subheading from "../Subheading";
 import { AccordionCustomIcon } from "../AccordionCustomIcon";
 import InclusionsList from "./InclusionsList";
+import Review from "./Review";
+import FaqAcordion from "./FaqAcordion";
 
 function TabsOverview() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -184,15 +186,19 @@ function TabsOverview() {
             </div>
           </TabPanel>
           <TabPanel key="reviews" value="reviews">
-            <div className="flex gap-16">
+            <div className="flex gap-11">
               <Image src={review} className={`self-start`} />
-              <div></div>
+              <div>
+                <Review/>
+              </div>
             </div>
           </TabPanel>
           <TabPanel key="faq" value="faq">
           <div className="flex gap-16">
               <Image src={faq} className={`self-start`} />
-              <div></div>
+              <div>
+                <FaqAcordion/>
+              </div>
             </div>
           </TabPanel>
           <TabPanel key="essential" value="essential">
