@@ -23,7 +23,7 @@ function Header2({className}) {
                 Activities
               </li>
             </Link>
-            <Link>
+            <Link to='/tour-detail'>
               <li className="text-xl font-poppins font-medium text-primary mx-5">
                 Specials
               </li>
