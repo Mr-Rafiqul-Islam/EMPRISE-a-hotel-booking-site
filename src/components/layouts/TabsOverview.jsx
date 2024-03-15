@@ -135,7 +135,7 @@ function TabsOverview() {
                 <Link className="text-[#99A3AD] font-poppins text-base">
                   Show More...
                 </Link>
-                <div className="flex flex-wrap gap-y-7 mt-14">
+                <div className="flex flex-wrap gap-y-7 mt-14 border-b-2 pb-4">
                   {info.map(({ title, logo, besideLogo }) => (
                     <div key={title} className="basis-1/3">
                       <Subheading
@@ -172,7 +172,7 @@ function TabsOverview() {
           <TabPanel key="inclusions" value="inclusions">
             <div className="flex gap-16">
               <Image src={inclusions} className={`self-start`} />
-              <div>
+              <div className="border-b-2 pb-2">
                 <Paragraph
                   className="text-[#1D293F] mb-5 text-base"
                   text={data.at(0).desc}
