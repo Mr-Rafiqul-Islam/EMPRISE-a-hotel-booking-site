@@ -6,6 +6,7 @@ import Label from "../Label";
 import date from "../../assets/icons/Vectordate.svg";
 import Plus from "../../assets/icons/Plus.svg";
 import Minus from "../../assets/icons/Minus.svg";
+import Counter from "../Counter";
 
 function TourBooking() {
   return (
@@ -45,23 +46,9 @@ function TourBooking() {
             <img src={date} alt="date" />
           </div>
         </div>
-        <div className="my-4">
-          <Label text={`Travelers`} className={`font-normal my-4`} />
-          <div className="flex p-3 w-full justify-between border rounded-xl bg-white">
-            <input
-              type="text"
-              placeholder="2 Adult, 1 Child"
-              name="travellers"
-              className="outline-none w-full placeholder:font-poppins placeholder:text-base placeholder:text-[#99A3AD] text-base text-[#99A3AD] font-poppins"
-              id=""
-            />
-            <div className="flex gap-2">
-              <img src={Minus} alt="minus" />
-                <h2 className="text-black font-poppins font-semibold text-[18px]">3</h2>
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-        </div>
+
+        <Counter/>
+
         <div className="my-4">
           <Label text={`Selections`} className={`font-normal my-4`} />
           <div className="flex p-3 w-full justify-between border rounded-xl bg-white">
