@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../slices/counterSlice";
 
 function Counter() {
+    // for catching the vlue with the help of redux
   let count = useSelector((state) => state.counter.value);
   let dispatch = useDispatch();
 
@@ -22,11 +23,21 @@ function Counter() {
             id=""
           />
           <div className="flex gap-2">
-            <img src={Minus} alt="minus" className="cursor-pointer" onClick={()=>dispatch(decrement())}/>
+            <img
+              src={Minus}
+              alt="minus"
+              className="cursor-pointer"
+              onClick={() => dispatch(decrement())}
+            />
             <h2 className="text-black font-poppins font-semibold text-[18px]">
               {count}
             </h2>
-            <img src={Plus} alt="plus" className="cursor-pointer" onClick={()=>dispatch(increment())}/>
+            <img
+              src={Plus}
+              alt="plus"
+              className="cursor-pointer"
+              onClick={() => dispatch(increment())}
+            />
           </div>
         </div>
       </div>
