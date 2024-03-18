@@ -69,7 +69,7 @@ function TabsOverview() {
   const info = [
     {
       title: "Duration",
-      logo: "/src/assets/icons/watch.svg",
+      logo: "src/assets/icons/watch.svg",
       besideLogo: "2 Days",
     },
     {
