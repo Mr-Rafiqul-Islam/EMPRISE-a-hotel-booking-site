@@ -9,6 +9,7 @@ import Demo from "./pages/Demo";
 import RootLayout from "./components/layouts/RootLayout";
 import SearchResult from "./pages/SearchResult";
 import TourDetail from "./pages/TourDetail";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
         <Route path="/demo" element={<Demo/>}/>
         <Route path="/search-result" element={<SearchResult/>}/>
         <Route path="/tour-detail" element={<TourDetail/>}/>
-        <Route path="*" element='khuija pai na'/>
+        <Route path="*" element={<Error/>}/>
       </Route>
     </Route>
 ));
