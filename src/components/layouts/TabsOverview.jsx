@@ -4,6 +4,12 @@ import iternary from "../../assets/icons/inclusions.svg";
 import inclusions from "../../assets/icons/iternary.svg";
 import review from "../../assets/icons/review.svg";
 import faq from "../../assets/icons/faq.svg";
+import p1 from "../../assets/icons/watch.svg";
+import p2 from "../../assets/icons/walking.svg";
+import p3 from "../../assets/icons/meter.svg";
+import p4 from "../../assets/icons/group.svg";
+import p5 from "../../assets/icons/age.svg";
+import p6 from "../../assets/icons/season.svg";
 import {
   Tabs,
   TabsHeader,
@@ -69,32 +75,32 @@ function TabsOverview() {
   const info = [
     {
       title: "Duration",
-      logo: "src/assets/icons/watch.svg",
+      logo: p1,
       besideLogo: "2 Days",
     },
     {
       title: "Activity",
-      logo: "/src/assets/icons/walking.svg",
+      logo: p2,
       besideLogo: "Walking",
     },
     {
       title: "Physical",
-      logo: "/src/assets/icons/meter.svg",
+      logo:p3,
       besideLogo: "Strenuous",
     },
     {
       title: "Group Size",
-      logo: "/src/assets/icons/group.svg",
+      logo: p4,
       besideLogo: "8",
     },
     {
       title: "Age",
-      logo: "/src/assets/icons/age.svg",
+      logo: p5,
       besideLogo: "7+",
     },
     {
       title: "Season",
-      logo: "/src/assets/icons/season.svg",
+      logo: p6,
       besideLogo: "Apr-Sep",
     },
   ];
