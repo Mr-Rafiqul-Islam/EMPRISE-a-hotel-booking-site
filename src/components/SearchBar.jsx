@@ -11,11 +11,11 @@ function SearchBar({className}) {
   return (
     <div className={`w-[1328px] h-[176px] px-[71px] bg-white rounded-2xl flex items-center ${className}`}>
         <div className="pe-10">
-            <Subheading text='Location' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-1 before:z-[-1] relative z-10'/>
+            <Subheading text='Location' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-2 before:z-[-1] relative z-10'/>
             <Selector/>
         </div>
         <div className="border-x-2 ps-14 pe-10">
-            <Subheading text='Activity' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-1 before:z-[-1] relative z-10'/>
+            <Subheading text='Activity' className='inline-block text-black text-[28px] font-poppins font-semibold before:w-full before:bg-[#f5d223] before:h-2 before:content-normal before:absolute before:bottom-2 before:z-[-1] relative z-10'/>
             {/* <form className="flex items-center gap-10">
               <select name="Activity"  className="underline py-2 bg-white font-poppins font-normal text-[18px] text-[#99A3AD]" id="Location">
                 <option selected >Bungee Jump</option>
