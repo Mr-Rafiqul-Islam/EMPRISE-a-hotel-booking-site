@@ -7,15 +7,15 @@ import SearchBar from "../SearchBar";
 import SocialLink from "../SocialLink";
 const Banner = ({className}) => {
   return (
-    <section className={`pt-[256px] pb-[198px] bg-banner bg-cover bg-no-repeat bg-center relative ${className}`}>
+    <section className={`pt-[100px] lg:pt-[256px] pb-[198px] bg-banner bg-cover bg-no-repeat bg-center relative ${className}`}>
       <SocialLink classname='text-white absolute bottom-[50%] -right-[120px] -rotate-90'/>
       <Container>
-        <div className="ps-[138px] pe-[78px]">
+        <div className="md:ps-[138px] pe-[78px]">
           {/* banner text */}
           <p className="text-white font-poppins font-regular text-2xl mb-14">
             <span className="me-4">&#9472;</span>The Himalyan Mountain Ranges
           </p>
-          <h1 className="text-white font-poppins text-9xl font-bold  mb-[50px]">
+          <h1 className="text-white font-poppins text-6xl lg:text-9xl font-bold  mb-[50px]">
             Nepal Country
           </h1>
           {/* Temparature  */}

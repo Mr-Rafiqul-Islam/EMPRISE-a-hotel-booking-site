@@ -13,7 +13,7 @@ function Header({className}) {
         </div>
         <nav className="w-[1328px] flex justify-between">
           <ul className="flex items-center">
-            <Link>
+            <Link to="/search-result">
               <li className="text-xl font-poppins font-medium text-white mx-5">
                 Destination
               </li>
